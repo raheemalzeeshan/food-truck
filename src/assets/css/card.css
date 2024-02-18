@@ -1,0 +1,117 @@
+.card {
+  margin-bottom: 61px;
+}
+.card {
+  padding: 40px 33px;
+  border: 1px solid #373737;
+  border-radius: 26px;
+}
+
+.card .card-media {
+  width: 204px;
+  height: 166px;
+  margin: 0 auto 39px;
+}
+.card .card-media img {
+  width: auto;
+  height: auto;
+}
+.card .card-content {
+  text-align: center;
+}
+.card .card-content h3 {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 35px;
+  letter-spacing: 0.05em;
+  color: var(--clr-primary);
+  margin-bottom: 10px;
+}
+.card .card-content p {
+  color: var(--clr-body);
+  font-family: var(--ff-source-san-600);
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: -0.01em;
+  margin-bottom: 26px;
+  text-align: center;
+}
+
+.card .btn-outline--dark {
+  padding: 7px 30px 7px 30px;
+}
+
+@media only screen and (min-width: 520px) {
+  .swiper-button-next {
+    right: var(--swiper-navigation-sides-offset, 150px);
+  }
+  .swiper-button-prev {
+    left: var(--swiper-navigation-sides-offset, 150px);
+  }
+}
+@media only screen and (min-width: 768px) {
+  .card-wrap {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .card {
+    padding: 21px 28px 39px;
+    margin-right: 20px;
+  }
+  .card .card-media {
+    width: 250px;
+    height: 197px;
+  }
+  .card .card-content h3 {
+    font-size: 18px;
+    text-align: left;
+  }
+  .card .card-content p {
+    text-align: left;
+  }
+  .swiper-button-next {
+    right: var(--swiper-navigation-sides-offset, 290px);
+  }
+  .swiper-button-prev {
+    left: var(--swiper-navigation-sides-offset, 290px);
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .card-wrap {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .swiper-button-next {
+    right: var(--swiper-navigation-sides-offset, 440px);
+  }
+  .swiper-button-prev {
+    left: var(--swiper-navigation-sides-offset, 440px);
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .card .card-media {
+    width: 300px;
+    height: 237px;
+}
+.card .card-content h3 {
+  font-size: 21px;
+}
+  .swiper-button-next {
+    right: var(--swiper-navigation-sides-offset, 540px);
+  }
+  .swiper-button-prev {
+    left: var(--swiper-navigation-sides-offset, 540px);
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .swiper-button-next {
+    right: var(--swiper-navigation-sides-offset, 606px);
+  }
+  .swiper-button-prev {
+    left: var(--swiper-navigation-sides-offset, 606px);
+  }
+}

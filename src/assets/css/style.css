@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@font-face {
+  font-family: "source-sans-pro-bold", sans-serif;
+  src: url(../source-sans-pro/SourceSansPro-Bold.otf);
+  font-display: swap;
+}
+@font-face {
+  font-family: "source-sans-pro-semibold", sans-serif;
+  src: url(../source-sans-pro/SourceSansPro-Semibold.otf);
+  font-display: swap;
+}
+
+:root {
+  --ff-source-san-600: "source-sans-pro-semibold", sans-serif;
+  --ff-source-san-700: "source-sans-pro-bold", sans-serif;
+  --ff-poppins: "Poppins", sans-serif;
+  --ff-open-sans: "Open Sans", sans-serif;
+  --clr-primary: #0E2368;
+  --clr-body: #444957;
+  --clr-btn: #e23744;
+  --clr-white: #fff;
+}
+/* CSS reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select,
+span {
+  font: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--ff-poppins);
+  overflow-wrap: break-word;
+}
+span {
+  overflow-wrap: break-word;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+label {
+  display: none;
+}
+#root,
+#__next {
+  isolation: isolate;
+}
+
+/* Container */
+.container {
+  width: 300px;
+  margin: 0 auto;
+}
+/* Button */
+.btn {
+  font-family: var(--ff-open-sans);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 46px;
+  letter-spacing: 0.03em;
+  padding: 10px 30px 10px 30px;
+  border-radius: 27px;
+  border: 1px;
+  transition: 0.2s all linear;
+}
+.btn-outline--dark {
+  border: 2px solid #424961;
+  color: #424961;
+}
+.btn-outline--dark:hover {
+  background-color: var(--clr-primary);
+  color: var(--clr-white);
+}
+.btn-outline--light {
+  border: 1px solid var(--clr-white);
+  color: var(--clr-white);
+}
+.btn-fill {
+  background-color: var(--clr-btn);
+  color: var(--clr-white);
+}
+.btn-fill:hover {
+  background-color: transparent;
+  color: var(--clr-btn);
+  border: 1px solid var(--clr-btn);
+}
+
+section {
+  margin-bottom: 132px;
+}
+@media only screen and (min-width: 390px) {
+  /* Container */
+  .container {
+    width: calc(91% - 50px);
+  }
+}
+@media only screen and (min-width: 768px) {
+  /* Container */
+  .container {
+    width: 700px;
+  }
+  section {
+    margin-bottom: 150px;
+  }
+}
+
+@media only screen and (min-width: 880px) {
+  /* Container */
+  .container {
+    width: calc(91% - 50px);
+  }
+}
+@media only screen and (min-width: 1024px) {
+  /* Container */
+  .container {
+    width: 990px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  /* Container */
+  .container {
+    width: 1200px;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  /* Container */
+  .container {
+    width: 1320px;
+  }
+}
